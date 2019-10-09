@@ -101,7 +101,6 @@ input[type="submit"] {
 
 
 input[type="submit"]:hover {
-  background-color: var(--bgColor);
   color: var(--pinkColor);
 }
 
