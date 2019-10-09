@@ -1,18 +1,33 @@
+@font-face {
+  font-family: "myFont";
+  src: url(fonts/Inter/Inter-Regular.woff);
+}
+
+:root {
+  --bgColor: #282a36;
+  --textColor: #f8f8f2;
+  --headingColor: #50fa7b;
+  --accentColor: #8be9fd;
+  --pinkColor: #ff79c6;
+  --regularFont: "myFont";
+}
+
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
   height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--headingColor);
   padding: 20px;
   cursor: pointer;
+  font-family: var(--regularFont);
 }
 
 .spinner {
@@ -22,18 +37,23 @@
 
 .App-intro {
   font-size: large;
+  color: var(--textColor);
+
 }
 
 /* new css for movie component */
 
 * {
   box-sizing: border-box;
+  background-color: var(--bgColor);
 }
 
 .movies {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  background-color: var(--bgColor);
+  color: var(--accentColor);
 }
 
 .App-header h2 {
@@ -73,24 +93,23 @@
 
 input[type="submit"] {
   padding: 5px;
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
   width: 80px;
   margin-left: 5px;
   cursor: pointer;
+  color: var(--pinkColor);
 }
 
 
 input[type="submit"]:hover {
-  background-color: #282c34;
-  color: antiquewhite;
+  background-color: var(--bgColor);
+  color: var(--pinkColor);
 }
 
 
 .search > input[type="text"]{
   width: 40%;
   min-width: 170px;
+  color: var(--textColor);
 }
 
 @media screen and (min-width: 694px) and (max-width: 915px) {
