@@ -30,6 +30,10 @@
   font-family: var(--regularFont);
 }
 
+.App-header .name {
+  float: left;
+}
+
 .spinner {
   height: 80px;
   margin: auto;
